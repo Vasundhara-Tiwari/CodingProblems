@@ -1,6 +1,9 @@
 package solutions;
 
 public class GenerateValidParenthesisPair {
+    public static void main(String[] args) {
+        generateParenthesis(3,0,0, "");
+    }
     public static void generateParenthesis(int n, int opening, int closing, String ans){
         if(opening == n && closing == n){
             System.out.println(ans);
