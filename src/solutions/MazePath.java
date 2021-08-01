@@ -1,5 +1,7 @@
 package solutions;
 
+
+//Constraint:- allowed moves, Right or Down
 public class MazePath  {
     public static void main(String[] args) {
         mazePath(0,0,2,2,"");
