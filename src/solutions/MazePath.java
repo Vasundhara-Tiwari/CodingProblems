@@ -7,11 +7,11 @@ public class MazePath  {
         mazePath(0,0,2,2,"");
     }
     public static void mazePath(int currentx, int currenty, int destinationx, int destinationy, String ans){
-        if(currentx>destinationx || currenty>destinationy){
+        if(currentx>destinationx || currenty>destinationy){     //-ve base case
             return;
         }
 
-        if(currentx==destinationx && currenty==destinationy){
+        if(currentx==destinationx && currenty==destinationy){       //+ve base case
             System.out.println(ans);
             return;
         }
