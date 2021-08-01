@@ -1,9 +1,9 @@
 package solutions;
 
 public class NoConsecutiveHeads {
-    static boolean check =false;
+
     public static void main(String[] args) {
-        noConsecutiveHeads(5,"",check);
+        noConsecutiveHeads(5,"",false);
     }
     public static void noConsecutiveHeads(int n, String ans, boolean check){
         if(n==0){
