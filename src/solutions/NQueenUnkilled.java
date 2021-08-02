@@ -26,7 +26,6 @@ public class NQueenUnkilled {
     }
     public static boolean isSafe(boolean[][] board, int row, int col) {
         // Check above
-
         for (int i = 0; i < row; i++) {
             if (board[i][col]) {
                 return false;
