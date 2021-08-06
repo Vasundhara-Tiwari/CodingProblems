@@ -20,15 +20,16 @@ public class CelebrityProblem {
             } else {
                 Potential.push(A);
             }
-        }int Celeb = Potential.pop();
-        for (int jj = 0; jj < relation.length; jj++) {
+        }
+        int Celeb = Potential.pop();
+        for (int j = 0; j < relation.length; j++) {
 //			Check row
-            if (relation[Celeb][jj] == 1) {
+            if (relation[Celeb][j] == 1) {
                 System.out.println("Lies!! No Celeb !! ");
                 return;
             }
 //			Check col of Celeb
-            if (jj != Celeb && relation[jj][Celeb] == 0) {
+            if (j != Celeb && relation[j][Celeb] == 0) {
                 System.out.println("Lies!! No Celeb !! ");
                 return;
             }
