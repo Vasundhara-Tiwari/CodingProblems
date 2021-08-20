@@ -6,7 +6,12 @@ public class Subsets {
         return res;
     }
     public void explore(int start, int[] nums, List<Integer> list, List<List<Integer>> res) {
-        
+        res.add(new ArrayList<>(list));
+        for (int i = start; i < nums.length; i++) {
+            list.add(nums[i]);
+            explore(i+1, nums, list, res);
+            list.remove(list.size() - 1);
+        }
     }
    
 }
