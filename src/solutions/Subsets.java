@@ -5,6 +5,8 @@ public class Subsets {
         explore(0, nums, list, res);
         return res;
     }
-    
+    public void explore(int start, int[] nums, List<Integer> list, List<List<Integer>> res) {
+        
+    }
    
 }
