@@ -3,7 +3,7 @@ class SequentialDigits {
         
         
    }
-   public static void sequentialDigits(int current, int low, int high, List<Integer> result){
+   public static void findSequentialDigits(int current, int low, int high, List<Integer> result){
       
     }
 }
