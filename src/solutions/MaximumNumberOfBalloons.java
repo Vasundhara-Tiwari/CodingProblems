@@ -1,8 +1,10 @@
 package solutions;
 
+import java.util.Scanner;
+
 public class MaximumNumberOfBalloons {
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
     }
     public int maxNumberOfBalloons(String text) {
         char[] arr = {'b', 'a', 'l','o', 'n'};
