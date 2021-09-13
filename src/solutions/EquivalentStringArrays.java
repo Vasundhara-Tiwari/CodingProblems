@@ -1,8 +1,12 @@
+package solutions;
+
+import java.util.Scanner;
+
 class EquivalentStringArrays{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-	    	int length1 = sc.nextInt();
-	    	int length2 = sc.nextInt();
+		int length1 = sc.nextInt();
+		int length2 = sc.nextInt();
  		String[] word1 = new String[length1];
  		String[] word2 = new String[length2];
  		for(int i=0;i<word1.length; i++){
