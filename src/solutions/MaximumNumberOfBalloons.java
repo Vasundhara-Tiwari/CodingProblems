@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class MaximumNumberOfBalloons {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        maxNumberOfBalloons(text);
     }
-    public int maxNumberOfBalloons(String text) {
+    public static int maxNumberOfBalloons(String text) {
         char[] arr = {'b', 'a', 'l','o', 'n'};
         int[] frequency = new int[arr.length];
         for(int j=0; j<arr.length; j++){
