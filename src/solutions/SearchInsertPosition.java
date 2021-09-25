@@ -14,6 +14,13 @@ public class SearchInsertPosition {
         System.out.println(searchInsert(arr,target));
     }
     public static int searchInsert(int[] nums, int target) {
-        return 0;
+        for(int i=0 ; i<nums.length; i++){
+            if(nums[i] == target){
+                return i;
+            } else if(nums[i]>target){
+                return i;
+            }
+        }
+        return nums.length;
     }
 }
