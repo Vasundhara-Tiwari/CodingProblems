@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.Scanner;
+
 public class UniquePaths {
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];
@@ -14,5 +16,12 @@ public class UniquePaths {
             }
         }
         return dp[m-1][n-1];
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int m = scanner.nextInt();
+        int n = scanner.nextInt();
+
     }
 }
