@@ -22,6 +22,6 @@ public class UniquePaths {
         Scanner scanner = new Scanner(System.in);
         int m = scanner.nextInt();
         int n = scanner.nextInt();
-
+        System.out.println(uniquePaths(m, n));
     }
 }
