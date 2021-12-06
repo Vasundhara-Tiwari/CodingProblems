@@ -17,6 +17,5 @@ public class Permutations {
             String sp = str.substring(0,i) + str.substring(i+1);
             possiblePermutations(sp, ans+ch);
         }
-
     }
 }
