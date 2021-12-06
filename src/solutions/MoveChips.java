@@ -9,6 +9,7 @@ public class MoveChips {
         for(int i=0; i< 3; i++){
             arr[i] = scanner.nextInt();
         }
+        System.out.println(minCostToMoveChips(arr));
     }
     public static int minCostToMoveChips(int[] position) {
         int sum1 = 0;
