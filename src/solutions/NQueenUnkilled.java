@@ -31,7 +31,6 @@ public class NQueenUnkilled {
                 return false;
             }
         }
-
         // check left
         for (int j = 0; j < col; j++) {
             if (board[row][j]) {
