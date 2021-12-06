@@ -14,7 +14,11 @@ public class MoveChips {
         int sum1 = 0;
         int sum2 = 0;
         for(int i=0; i<position.length; i++) {
-
+            if(position[i]%2 == 0) {
+                sum1++;
+            } else {
+                sum2++;
+            }
         }
         return (sum1 < sum2) ? sum1 : sum2;
     }
