@@ -13,7 +13,9 @@ public class MoveChips {
     public int minCostToMoveChips(int[] position) {
         int sum1 = 0;
         int sum2 = 0;
+        for(int i=0; i<position.length; i++) {
 
+        }
         return (sum1 < sum2) ? sum1 : sum2;
     }
 }
