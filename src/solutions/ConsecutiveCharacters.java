@@ -7,7 +7,10 @@ public class ConsecutiveCharacters {
             if(s.charAt(i)==s.charAt(i+1)) {
                 count++;
             }
-
+            else{
+                max = Math.max(max, count);
+                count = 1;
+            }
         }
         return max;
     }
