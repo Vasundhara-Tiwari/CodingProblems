@@ -1,8 +1,12 @@
 package solutions;
 
+import java.util.Scanner;
+
 public class ConsecutiveCharacters {
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        System.out.println(maxPower(str));
     }
     public static int maxPower(String s){
         int max = 1, count = 1;
