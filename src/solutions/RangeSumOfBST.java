@@ -39,7 +39,8 @@ public class RangeSumOfBST {
         if(root.val <= high && root.val >= low){
             count += root.val;
         }
-
+        rangeSumBST(root.left, low, high);
+        rangeSumBST(root.right, low, high);
         return count;
     }
 }
