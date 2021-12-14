@@ -36,6 +36,9 @@ public class RangeSumOfBST {
         if(root == null){
             return 0;
         }
+        if(root.val <= high && root.val >= low){
+            count += root.val;
+        }
 
         return count;
     }
