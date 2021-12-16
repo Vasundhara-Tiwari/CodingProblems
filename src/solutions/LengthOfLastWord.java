@@ -3,7 +3,7 @@ package solutions;
 import java.util.Scanner;
 
 public class LengthOfLastWord {
-    public int lengthOfLastWord(String s) {
+    public static int lengthOfLastWord(String s) {
         int len=0;
         s=s.strip();
         for(int i=s.length()-1;i>=0;i--){
@@ -17,5 +17,6 @@ public class LengthOfLastWord {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
+        int result = lengthOfLastWord(s);
     }
 }
