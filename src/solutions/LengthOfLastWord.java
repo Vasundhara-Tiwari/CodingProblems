@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.Scanner;
+
 public class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
         int len=0;
@@ -12,8 +14,7 @@ public class LengthOfLastWord {
         }
         return len;
     }
-
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
     }
 }
