@@ -18,5 +18,6 @@ public class LengthOfLastWord {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         int result = lengthOfLastWord(s);
+        System.out.println(result);
     }
 }
