@@ -12,4 +12,8 @@ public class LengthOfLastWord {
         }
         return len;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
