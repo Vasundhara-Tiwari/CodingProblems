@@ -2,6 +2,7 @@ package solutions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {
@@ -20,6 +21,6 @@ public class Subsets {
     }
 
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
     }
 }
