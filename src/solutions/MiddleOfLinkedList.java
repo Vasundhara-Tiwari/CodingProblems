@@ -12,6 +12,10 @@ public class MiddleOfLinkedList {
         ListNode current = head;
         int size = 1;
         ListNode ans;
+        while(current.next != null){
+            current = current.next;
+            size++;
+        }
 
         return ans;
     }
