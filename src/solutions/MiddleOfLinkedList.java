@@ -16,6 +16,7 @@ public class MiddleOfLinkedList {
             current = current.next;
             size++;
         }
+        current = head;
 
         return ans;
     }
