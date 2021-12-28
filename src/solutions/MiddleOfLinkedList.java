@@ -9,5 +9,7 @@ public class MiddleOfLinkedList {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
     public ListNode middleNode(ListNode head) {
+        ListNode current = head;
+
     }
 }
