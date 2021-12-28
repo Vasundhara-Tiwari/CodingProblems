@@ -20,6 +20,7 @@ public class MiddleOfLinkedList {
         for(int i=0; i<size/2; i++){
             current = current.next;
         }
+        ans = current;
         return ans;
     }
 }
