@@ -11,6 +11,8 @@ public class MiddleOfLinkedList {
     public ListNode middleNode(ListNode head) {
         ListNode current = head;
         int size = 1;
+        ListNode ans;
 
+        return ans;
     }
 }
