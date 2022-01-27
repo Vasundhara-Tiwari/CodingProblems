@@ -7,7 +7,8 @@ public class HouseRobber {
     public int rob(int[] nums) {
         int dp[] = new int[nums.length+1];
         Arrays.fill(dp, -1);
-
+        int ans = robdp(nums, index, dp);
+        return ans;
 
     }
 }
