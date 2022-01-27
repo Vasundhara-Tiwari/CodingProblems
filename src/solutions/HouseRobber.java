@@ -9,6 +9,9 @@ public class HouseRobber {
         Arrays.fill(dp, -1);
         int ans = robdp(nums, index, dp);
         return ans;
+    }
+    public static int robdp(int[] nums, int index, int[] dp){
 
+        return dp[index];
     }
 }
