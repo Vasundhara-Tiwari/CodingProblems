@@ -18,7 +18,7 @@ public class HouseRobber {
             return dp[index];
         }
         int ans1 = nums[index] + robdp(nums, index+2, dp);
-
+        int ans2 = robdp(nums, index+1, dp);
         return dp[index];
     }
 }
