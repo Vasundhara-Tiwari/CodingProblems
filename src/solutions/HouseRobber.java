@@ -11,7 +11,9 @@ public class HouseRobber {
         return ans;
     }
     public static int robdp(int[] nums, int index, int[] dp){
-
+        if(index >= nums.length){
+            return 0;
+        }
         return dp[index];
     }
 }
