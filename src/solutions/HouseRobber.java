@@ -19,6 +19,7 @@ public class HouseRobber {
         }
         int ans1 = nums[index] + robdp(nums, index+2, dp);
         int ans2 = robdp(nums, index+1, dp);
+        dp[index] = Math.max(ans1, ans2);
         return dp[index];
     }
 }
