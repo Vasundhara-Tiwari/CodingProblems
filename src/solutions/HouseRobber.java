@@ -14,6 +14,10 @@ public class HouseRobber {
         if(index >= nums.length){
             return 0;
         }
+        if(dp[index] != -1){
+            return dp[index];
+        }
+
         return dp[index];
     }
 }
