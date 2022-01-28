@@ -1,7 +1,6 @@
 package solutions;
 
 
-//Constraint, you can jump 1,2 or stairs at a time.
 public class ClimbingStairs {
     public static void main(String[] args) {
         printPossibleSteps(0,10,"");
