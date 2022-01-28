@@ -1,10 +1,16 @@
 package solutions;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 public class CelebrityProblem {
     public static void main(String[] args) {
-        int[][] arr = { { 0, 1, 1, 1 }, { 1, 0, 1, 0 }, { 0, 0, 0, 0 }, { 1, 1, 1, 0 } };
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        int[][] arr = new int[size][size];
+        for(int row = 0; row < size; row++)
+            for(int column = 0; column < size; column++)
+                arr[row][column] = scanner.nextInt();
         celebrity(arr);
     }
     public static void celebrity(int[][] relation){
@@ -23,17 +29,15 @@ public class CelebrityProblem {
         }
         int Celeb = Potential.pop();
         for (int j = 0; j < relation.length; j++) {
-//			Check row
             if (relation[Celeb][j] == 1) {
-                System.out.println("Lies!! No Celeb !! ");
+                System.out.println("No Celebrity");
                 return;
             }
-//			Check col of Celeb
             if (j != Celeb && relation[j][Celeb] == 0) {
-                System.out.println("Lies!! No Celeb !! ");
+                System.out.println("No Celebrity");
                 return;
             }
         }
-        System.out.println(Celeb + " is a real person!! ");
+        System.out.println(Celeb);
     }
 }
