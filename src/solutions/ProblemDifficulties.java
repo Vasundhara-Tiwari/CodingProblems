@@ -33,7 +33,7 @@ public class ProblemDifficulties {
         /*for(int i=1; i<=test;i++) {
             Set<Integer> al = new HashSet<>();
             for (int j = 0; j < 4; j++) {
-                al.add(scn.nextInt());
+                al.add(scanner.nextInt());
             }
             if(al.size() > 2){
                 System.out.println("2");
