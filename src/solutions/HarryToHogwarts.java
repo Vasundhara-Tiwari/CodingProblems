@@ -3,6 +3,7 @@ package solutions;
 import java.util.Scanner;
 
 public class HarryToHogwarts {
+    public static int count =0;
 
     public static int smallestNumber(int number) {
         int[] frequency = new int[10];
