@@ -4,7 +4,16 @@ import java.util.Scanner;
 
 public class HarryToHogwarts {
     public static int count =0;
-
+    public static void countNumberOfTimes(int n){
+        int result =Integer.MAX_VALUE;
+        while (result !=0 && result !=6174) {
+            int maximum = printMaximum(n);
+            int minimum = smallestNumber(n);
+            result = maximum - minimum;
+            count++;
+            n = result;
+        }
+    }
     public static int smallestNumber(int number) {
         int[] frequency = new int[10];
         boolean isPosition = (number >0);
