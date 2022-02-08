@@ -5,3 +5,6 @@ class Parent {
         System.out.println("p");
     }
 }
+public class Child extends Parent{
+
+}
