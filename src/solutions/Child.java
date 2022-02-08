@@ -6,5 +6,8 @@ class Parent {
     }
 }
 public class Child extends Parent{
+    public Child(String s){
+        System.out.println("sub");
+    }
 
 }
