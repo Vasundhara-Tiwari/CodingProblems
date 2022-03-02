@@ -18,8 +18,9 @@ public class FirstLastOccurrence {
         }
         int num = scanner.nextInt();
         //System.out.println(firstOccurrence(arr, 0, num));
-        lastOccurrence(arr, 0, num);
-        System.out.println(last);
+        //lastOccurrence(arr, 0, num);
+        //System.out.println(last);
+        allOccurrence(arr, 0, num);
     }
     public static int firstOccurrence(int[] arr, int index, int num){
         if(index == arr.length){
@@ -39,5 +40,14 @@ public class FirstLastOccurrence {
             last = index;
         }
         lastOccurrence(arr, index+1, num);
+    }
+    public static void allOccurrence(int[] arr, int index, int num){
+        if(index == arr.length){
+            return;
+        }
+        if(arr[index] == num){
+            System.out.println(index);
+        }
+        allOccurrence(arr, index+1, num);
     }
 }
