@@ -12,6 +12,7 @@ public class AllSubsequences {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         subsequences(str, 0,"");
+        asciiSubsequences(str, 0, "");
     }
     public static void subsequences(String str, int index, String ans) {
         if(index == str.length()){
@@ -20,5 +21,13 @@ public class AllSubsequences {
         }
         subsequences(str, index+1, ans+str.charAt(index));
         subsequences(str, index+1, ans);
+    }
+    public static void asciiSubsequences(String str, int index, String ans) {
+        if(index == str.length()){
+            System.out.println(ans);
+            return;
+        }
+        asciiSubsequences(str, index+1, ans+str.charAt(index)+(int)str.charAt(index));
+        asciiSubsequences(str, index+1, ans);
     }
 }
