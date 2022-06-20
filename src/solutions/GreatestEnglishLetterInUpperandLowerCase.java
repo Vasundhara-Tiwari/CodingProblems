@@ -16,5 +16,16 @@ public class GreatestEnglishLetterInUpperandLowerCase{
         common.add(s.charAt(i));
       }
     }
+    Character max = 'A';
+    for(int i = 0; i < common.size(); i++){
+      if(common.get(i) > max){
+        max = common.get(i);
+      }
+    }
+    String str = "";
+    if(!common.isEmpty()){
+      str += String.valueOf(max).toUpperCase();
+    }
+    return str;
   }
 }
