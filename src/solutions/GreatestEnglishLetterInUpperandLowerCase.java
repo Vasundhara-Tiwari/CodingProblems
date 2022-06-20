@@ -11,5 +11,10 @@ public class GreatestEnglishLetterInUpperandLowerCase{
         uppercase.add(s.charAt(i));
       }
     }
+    for(int i = 0; i < s.length(); i++){
+      if(lowercase.contains(s.charAt(i)) && uppercase.contains((char)(s.charAt(i)-32))){
+        common.add(s.charAt(i));
+      }
+    }
   }
 }
