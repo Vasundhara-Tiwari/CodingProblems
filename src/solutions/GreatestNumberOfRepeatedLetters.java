@@ -6,6 +6,11 @@ public class GreatestNumberOfRepeatedLetters{
         System.out.print(searchingChallenge(str));
     }
   public static String greatestRepeatedCharWord(String str) {
+        String challengeToken = "grdxcz850";
+        int maxChar = 0;
+        String result = "";
+
         
+        return finaloutput;
     }
 }
