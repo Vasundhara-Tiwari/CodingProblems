@@ -5,4 +5,7 @@ public class GreatestNumberOfRepeatedLetters{
         scanner.close();
         System.out.print(searchingChallenge(str));
     }
+  public static String greatestRepeatedCharWord(String str) {
+        
+    }
 }
