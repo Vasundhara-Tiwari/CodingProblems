@@ -30,4 +30,15 @@ public class GreatestNumberOfRepeatedLetters{
         
         return finaloutput;
     }
+    static int mostFrequentCharCount(final String word) {
+        final int chars[] = new int[256];
+
+        int max = 0;
+        for (final char c : word.toCharArray()) {
+            chars[c]++;
+            if (chars[c] > chars[max])
+                max = c;
+        }
+        return chars[max];
+    }
 }
