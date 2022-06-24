@@ -10,7 +10,8 @@ public class LongestSubstringWithoutRepeatingCharacters{
                 if(!window.contains(s.charAt(j))){
                    window.add(s.charAt(j));
                    answer=Math.max(answer, j-i+1); 
-                }else{
+                }
+                else{
                    break; 
                 }
             } 
