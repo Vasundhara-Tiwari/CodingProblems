@@ -3,6 +3,7 @@ public class NonDecreasingArray{
         int modified = 0;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] < nums[i - 1]) {
+                if (modified++ > 0) return false;
                 
             }
         }
