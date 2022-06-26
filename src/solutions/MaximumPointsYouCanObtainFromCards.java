@@ -5,6 +5,11 @@ public class MaximumPointsYouCanObtainFromCards{
            leftSum += cardPoints[i];
          if(k == n) return leftSum;
            maximumScore = Math.max(maximumScore, leftSum);
+         for(int i = 0; i < k; i++){
+           leftSum -= cardPoints[k - i - 1];
+           rightSum += cardPoints[n - i - 1];
+           maximumScore = Math.max(maximumScore, leftSum + rightSum);
+          }
          return maximumScore;
     }
 }
