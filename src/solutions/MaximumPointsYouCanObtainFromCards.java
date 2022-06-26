@@ -3,6 +3,8 @@ public class MaximumPointsYouCanObtainFromCards{
          int n = cardPoints.length, maximumScore = 0, leftSum = 0, rightSum = 0;
          for(int i = 0; i < k; i++) 
            leftSum += cardPoints[i];
+         if(k == n) return leftSum;
+           maximumScore = Math.max(maximumScore, leftSum);
          return maximumScore;
     }
 }
