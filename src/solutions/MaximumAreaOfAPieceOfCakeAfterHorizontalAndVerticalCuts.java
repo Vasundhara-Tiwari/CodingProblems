@@ -6,5 +6,9 @@ public class MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts{
         for(int i=1;i<horizontalCuts.length;i++)
             maxh = Math.max(horizontalCuts[i]-horizontalCuts[i-1],maxh);
         maxh = Math.max(h-horizontalCuts[horizontalCuts.length-1],maxh);
+        int maxw = verticalCuts[0];
+        for(int i=1;i<verticalCuts.length;i++)
+            maxw = Math.max(verticalCuts[i]-verticalCuts[i-1],maxw);
+        maxw = Math.max(w-verticalCuts[verticalCuts.length-1],maxw);
     }
 }
