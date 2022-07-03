@@ -3,5 +3,8 @@ public class WiggleSubsequence{
     if(nums.length<2){
       return 1;
     }
+    int count=1;
+    int prevDiff=0;
+    return count;
   }
 }
