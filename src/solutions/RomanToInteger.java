@@ -14,6 +14,29 @@ public class RomanToInteger{
             continue;
           }
         }
+        if(s.charAt(i) == 'X') {
+          if(s.charAt(i+1) == 'L') {
+            result += 40;
+            i+=2;
+            continue;
+          } else if(s.charAt(i+1) == 'C') {
+            result += 90;
+            i+=2;
+            continue;
+          }
+        }
+        if(s.charAt(i) == 'C') {
+          if(s.charAt(i+1) == 'D') {
+            result += 400;
+            i+=2;
+            continue;
+          } else if(s.charAt(i+1) == 'M') {
+            result += 900;
+            i+=2;
+            continue;
+          }
+        }
+      }
         switch(s.charAt(i)) {
           case 'I': result += 1;
             break;
