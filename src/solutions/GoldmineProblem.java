@@ -32,13 +32,17 @@ public class GoldmineProblem {
             System.out.println(result);
         }
     }
+
     public static int goldmineSolution(int[][] arr, int num2, int num1, int currentRow, int currentColumn, int[][] dp){
+        
         if(currentRow <0 || currentRow == num1 || currentColumn == num2){
             return 0;
         }
+
         if(dp[currentRow][currentColumn] != -1){
             return dp[currentRow][currentColumn];
         }
+
         int x1 =  goldmineSolution(arr, num2, num1, currentRow -1, currentColumn +1,dp);
         int x2 = goldmineSolution(arr, num2, num1, currentRow, currentColumn +1,dp);
         int x3 =  goldmineSolution(arr, num2, num1, currentRow +1, currentColumn +1,dp);
