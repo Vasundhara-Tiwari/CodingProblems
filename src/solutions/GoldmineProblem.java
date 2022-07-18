@@ -12,19 +12,23 @@ public class GoldmineProblem {
             int num2 = scanner.nextInt();
             int[][] arr = new int[num1][num2];
             int result = -1;
+
             for(int j = 0; j< num1; j++){
                 for(int k = 0; k< num2; k++){
                     arr[j][k] = scanner.nextInt();
                 }
             }
+
             int[][] dp = new int[num1 +1][num2 +1];
             for(int row[]: dp){
                 Arrays.fill(row,-1);
             }
+
             for(int k = 0; k < num1; k++){
                 int resR = goldmineSolution(arr, num2, num1, k,0, dp);
                 result = Math.max(result,resR);
             }
+
             System.out.println(result);
         }
     }
