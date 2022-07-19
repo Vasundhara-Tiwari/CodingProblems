@@ -5,13 +5,16 @@ import java.util.Stack;
 
 public class CelebrityProblem {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
         int[][] arr = new int[size][size];
         for(int row = 0; row < size; row++)
             for(int column = 0; column < size; column++)
                 arr[row][column] = scanner.nextInt();
+        
         celebrity(arr);
+
     }
     public static void celebrity(int[][] relation){
         Stack<Integer> Potential = new Stack<>();
