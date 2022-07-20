@@ -12,6 +12,16 @@ public class CommonChild {
 
         int[] count=new int[26];
         Arrays.fill(count,Integer.MAX_VALUE);
-        
+        for(int i=0;i<words.length;i++){
+            int[] count1=new int[26];
+            for(int j=0;j<words[i].length();j++){
+                count1[words[i].charAt(j)-'a']++;
+            }
+
+            for(int j=0;j<26;j++){
+
+                count[j]=Math.min(count1[j],count[j]);
+            }
+        }
     }
 }
