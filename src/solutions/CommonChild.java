@@ -6,4 +6,12 @@ public class CommonChild {
         String[] words = {str1, str2};
         System.out.println(commonChars(words));
     }
+    public static int commonChars(String[] words) {
+
+        List<String> ls=new ArrayList<>();
+
+        int[] count=new int[26];
+        Arrays.fill(count,Integer.MAX_VALUE);
+        
+    }
 }
