@@ -13,6 +13,14 @@ public class DataMigration {
         String[] destinationArray = {"1234", "2345", "122363", "32435" };
         int[] output = new int[2];
         int corruptedIndex = 0;
-       
+        for(int i = 0; i < sourceArray.length; i++){
+            if(!sourceArray[i].equals(destinationArray[i])){
+                output[1] = i+1;
+                corruptedIndex = i;
+            }
+        }
+        int result = Math.abs(1 - corruptedIndex) > (sourceArray.length-corruptedIndex) ? Math.abs(0 - corruptedIndex) : (sourceArray.length-corruptedIndex);
+        output[0] = result-1;
+        System.out.println(Arrays.toString(output));
     }
 }
