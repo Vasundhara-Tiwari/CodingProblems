@@ -3,5 +3,14 @@ public class LowestCommonAncestor{
         if(root == null || p == root || q == root){
             return root;
         }
+        TreeNode right = lowestCommonAncestor(root.right , p , q);
+        TreeNode left = lowestCommonAncestor(root.left , p , q); 
+        if(right == null){
+            return left;
+        }
+        if(left == null){
+            return right;
+        }
+        return root;
   }
 }
