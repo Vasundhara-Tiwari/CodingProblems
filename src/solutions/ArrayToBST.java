@@ -5,4 +5,10 @@ public class ArrayToBST{
         }
         return constructTree(nums, 0, nums.length -1);
     }
+   public TreeNode constructTree(int[] nums,int left, int right){
+
+        if(left>right){ return null;}
+    
+        
+    }
 }
