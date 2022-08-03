@@ -13,6 +13,8 @@ public class ArrayToBST{
      
      TreeNode node = new TreeNode(nums[mid]);
      
+     node.left=constructTree(nums,left,mid-1);
+     
      retun node;
    }
 }
