@@ -10,5 +10,9 @@ public class ArrayToBST{
        return null;
      }
      int mid= left + (right-left) /2;
+     
+     TreeNode node = new TreeNode(nums[mid]);
+     
+     retun node;
    }
 }
