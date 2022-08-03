@@ -1,14 +1,14 @@
 public class ArrayToBST{
   public TreeNode sortedArrayToBST(int[] nums) {
-        if(nums.length == 0){
-            return null;
-        }
-        return constructTree(nums, 0, nums.length -1);
+    if(nums.length == 0){
+      return null;
     }
+    return constructTree(nums, 0, nums.length -1);
+  }
    public TreeNode constructTree(int[] nums,int left, int right){
-
-        if(left>right){ return null;}
-    
-        
-    }
+     if(left>right){ 
+       return null;
+     }
+     int mid= left + (right-left) /2;
+   }
 }
