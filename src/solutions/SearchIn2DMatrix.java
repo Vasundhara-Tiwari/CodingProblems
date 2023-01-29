@@ -1,4 +1,5 @@
 public class SearchIn2DMatrix{
+    // complexity O(N*M)
     public boolean searchMatrix(int[][] matrix, int target) {
         int n = matrix[0].length;
         for(int i = 0; i < matrix.length; i++){
