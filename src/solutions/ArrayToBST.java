@@ -1,3 +1,5 @@
+package solutions;
+
 public class ArrayToBST{
   public TreeNode sortedArrayToBST(int[] nums) {
     if(nums.length == 0){
