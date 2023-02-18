@@ -1,3 +1,5 @@
+package solutions;
+
 public class NAryTreePreorderTraversal{
     List<Integer> result = new ArrayList<>();
     

@@ -1,3 +1,5 @@
+package solutions;
+
 import java.util.ArrayList;
 public class FizzBuzz{
   public List<String> fizzBuzz(int n) {

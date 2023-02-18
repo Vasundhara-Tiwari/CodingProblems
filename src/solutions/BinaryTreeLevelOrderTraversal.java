@@ -1,3 +1,5 @@
+package solutions;
+
 public class BinaryTreeLevelOrderTraversal{
     void traverseTreeInLveleOrder(TreeNode node, int level, List<List<Integer>> ds) {
         if (node == null)

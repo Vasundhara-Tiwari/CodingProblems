@@ -1,3 +1,5 @@
+package solutions;
+
 public class FirstUniqueCharacterInString{
     public int firstUniqChar(String s) {
         int freq [] = new int[26];

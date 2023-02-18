@@ -1,3 +1,5 @@
+package solutions;
+
 import java.util.Arrays;
 public class RunningSum1DArray{
     public int[] runningSum(int[] nums) {

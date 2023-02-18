@@ -1,3 +1,5 @@
+package solutions;
+
 public class NumberOfSteps{
     public int numberOfSteps(int num) {
         int steps = 0;

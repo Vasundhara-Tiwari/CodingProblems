@@ -1,3 +1,5 @@
+package solutions;
+
 public class GreatestNumberOfRepeatedLetters{
   public static void main (String[] args) {
         final Scanner scanner = new Scanner(System.in);

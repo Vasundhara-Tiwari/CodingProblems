@@ -1,3 +1,5 @@
+package solutions;
+
 public class RansomNote{
     public boolean canConstruct(String ransomNote, String magazine) {
         for(int i = 0; i < ransomNote.length(); i++){

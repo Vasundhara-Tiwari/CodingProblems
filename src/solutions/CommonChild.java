@@ -1,3 +1,5 @@
+package solutions;
+
 public class CommonChild {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

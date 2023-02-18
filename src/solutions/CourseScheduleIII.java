@@ -1,3 +1,5 @@
+package solutions;
+
 public class CourseScheduleIII{
   public int scheduleCourse(int[][] courses) {
         var maxHeap = new PriorityQueue<Integer>(Comparator.reverseOrder());

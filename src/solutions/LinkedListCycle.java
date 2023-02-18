@@ -1,3 +1,5 @@
+package solutions;
+
 public class LinkedListCycle{
     public boolean hasCycle(ListNode head) {
         ArrayList<ListNode> al = new ArrayList<>();

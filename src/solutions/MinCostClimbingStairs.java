@@ -1,3 +1,5 @@
+package solutions;
+
 public class MinCostClimbingStairs{
   public int minCostClimbingStairs(int[] cost) {
     for (int i = 2; i < cost.length; i ++) {

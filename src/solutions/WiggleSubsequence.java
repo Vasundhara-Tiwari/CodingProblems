@@ -1,3 +1,5 @@
+package solutions;
+
 public class WiggleSubsequence{
   public int wiggleMaxLength(int[] nums) {
     if(nums.length<2){

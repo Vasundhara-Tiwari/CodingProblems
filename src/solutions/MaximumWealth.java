@@ -1,3 +1,5 @@
+package solutions;
+
 public class MaximumWealth{
   public int maximumWealth(int[][] accounts) {
     int maxSum = 0;

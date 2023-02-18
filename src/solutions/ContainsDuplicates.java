@@ -1,3 +1,5 @@
+package solutions;
+
 import java.util.HashSet;
 public class ContainsDuplicates{
     public boolean containsDuplicate(int[] nums) {

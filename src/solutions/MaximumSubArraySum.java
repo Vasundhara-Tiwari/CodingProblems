@@ -1,3 +1,5 @@
+package solutions;
+
 public class MaximumSubArraySum{
     static int sum = 0;
     public int maxSubArray(int[] nums) {

@@ -1,3 +1,5 @@
+package solutions;
+
 public class SearchIn2DMatrix{
     // complexity O(N*M)
     public boolean searchMatrix(int[][] matrix, int target) {

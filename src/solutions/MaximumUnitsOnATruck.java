@@ -1,3 +1,5 @@
+package solutions;
+
 public class MaximumUnitsOnATruck{
   public int maximumUnits(int[][] boxTypes, int truckSize) {
     Arrays.sort(boxTypes, (x, y) -> y[1] - x[1]);
