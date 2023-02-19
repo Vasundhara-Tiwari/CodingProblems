@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.Stack;
+
 public class ValidPairParenthesis {
   public boolean isValid(String input_str) {
         Stack<Character> s = new Stack<Character>();

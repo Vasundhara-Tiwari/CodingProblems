@@ -1,6 +1,21 @@
 package solutions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinaryTreeLevelOrderTraversal{
+        class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     void traverseTreeInLveleOrder(TreeNode node, int level, List<List<Integer>> ds) {
         if (node == null)
             return;

@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.*;
+
 public class ThreeSum{
       public List<List<Integer>> threeSum(int[] nums) {
         Set<List<Integer>> triplets = new HashSet<>();

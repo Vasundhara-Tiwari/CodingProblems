@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.Arrays;
+
 public class LongestCommonPrefix{
   public String longestCommonPrefix(String[] strs) {
         String result = "";

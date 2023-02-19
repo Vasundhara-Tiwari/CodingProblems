@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.Arrays;
+
 public class LongestConsecutiveSequence{
   public int longestConsecutive(int[] nums) {
         if(nums.length == 0){

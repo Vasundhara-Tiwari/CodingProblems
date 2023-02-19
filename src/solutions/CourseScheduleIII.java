@@ -1,5 +1,9 @@
 package solutions;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class CourseScheduleIII{
   public int scheduleCourse(int[][] courses) {
         var maxHeap = new PriorityQueue<Integer>(Comparator.reverseOrder());

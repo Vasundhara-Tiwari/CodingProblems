@@ -1,6 +1,19 @@
 package solutions;
 
+
 public class BinaryTreeFromPreorderInorderTraversal{
+    class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {}
+      TreeNode(int val) { this.val = val; }
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
+  }
   int index = 0;
   public TreeNode buildTree(int[] preorder, int[] inorder) {
         return build(preorder, inorder, 0, preorder.length-1);

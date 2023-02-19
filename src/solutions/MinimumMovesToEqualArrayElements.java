@@ -1,5 +1,7 @@
 package solutions;
 
+import java.util.Arrays;
+
 public class MinimumMovesToEqualArrayElements{
   public int minMoves2(int[] nums) {
         Arrays.sort(nums);
